@@ -1,0 +1,51 @@
+<aside class="sidebar">
+      <div>
+        <div class="projectTitle">
+        <h4>WR</h4>
+        </div>
+        <hr className="border-secondary"/>
+        <div class = "mt-4">
+          <nav class= "sidebarNav">
+            <a href="">홈</a>
+            <a href="">알림함</a>
+            <a href="">루틴 검색</a>
+            <div class="dropdown-section">
+              <div class="dropdown-toggle" onclick="toggleTeamList()">
+                팀 피드
+              </div>
+              <div id="teamList" style="display: none; padding-left: 1rem;">
+                <button class="btn btn-outline-light btn-sm mb-2" data-bs-toggle="modal" data-bs-target="#teamAddModal">+ 팀 추가</button>
+                <ul style="list-style: none; padding-left: 0;">
+                  <li><a href="" class="text-white text-decoration-none">💼 코딩팀</a></li>
+                  <li><a href="" class="text-white text-decoration-none">🚴 운동메이트</a></li>
+                </ul>
+              </div>
+            </div>        
+          </nav>
+        </div>  
+      </div>
+      <div class="bg-dark text-white p-3 rounded mt-auto mx-2" style="font-size: 0.9rem;">
+        친구를 초대하고<br>팀을 만들어보세요!
+        <button class="btn btn-light btn-sm mt-2 w-100" data-bs-toggle="modal" data-bs-target="#friendModal">+ 친구 추가</button>
+      </div>
+      <div class="profile profile-dropdown">
+        <button>
+          <img src="https://github.com/mdo.png" alt="프로필"> 선규 
+        </button>
+        <div class="dropdown-menu">
+          <a href="" style="color:white; text-decoration:none; display:block;">Profile</a>
+          <a href="" style="color:white; text-decoration:none; display:block;">Sign out</a>
+          <hr style="border-color: #333;">
+            <div class="friend-list">
+              <strong>👥 친구 목록</strong>
+              <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                <li>- 이지훈 </li>
+                <li>- 홍길동 </li>
+                <li>- 김개발 </li>
+              </ul>
+            </div>
+          <hr style="border-color: #333;" />
+          <button type="button" data-bs-toggle="modal" data-bs-target="#friendModal">+ 친구 추가</button>
+        </div>
+      </div>
+    </aside>
