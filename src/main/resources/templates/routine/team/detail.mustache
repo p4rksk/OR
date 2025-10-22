@@ -150,10 +150,63 @@
                 <textarea class="form-control" id="routineContent" rows="3">기상 후 10분 스트레칭</textarea>
               </div>
               <div class="mb-3">
-                <label class="form-label">코멘트 이력</label>
-                <div id="commentHistory" class="border rounded p-3" style="background-color: #fafafa;">
-                  <p class="text-muted">작성된 코멘트가 없습니다.</p>
-                  <!-- 이후 JS로 코멘트들을 추가 -->
+                <label class="form-label">코멘트</label>
+                <ul class="nav nav-pills mb-3" id="commentTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="tab-private" data-bs-toggle="pill"
+                            data-bs-target="#pane-private" type="button" role="tab">
+                      내 코멘트
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab-team" data-bs-toggle="pill"
+                            data-bs-target="#pane-team" type="button" role="tab">
+                      팀 피드백
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="commentTabContent">
+                  <div class="tab-pane fade show active" id="pane-private" role="tabpanel" aria-labelledby="tab-private">
+                    <div class="border rounded p-3" style="background-color: #fafafa;">
+                      <p class="mb-1">기상 컨디션 좋음.<br>근육 뻐근함 거의 없음.</p>
+                      <small class="text-muted">2025.04.03 09:12 작성됨</small>
+                    </div>
+                  </div>
+
+                  <!-- 팀 피드백 탭 -->
+                  <div class="tab-pane fade" id="pane-team" role="tabpanel" aria-labelledby="tab-team">
+                    <div id="teamComposer" class="mb-3">
+                      <textarea class="form-control mb-2" id="teamInput" rows="2" placeholder="팀원에게 남길 피드백..."></textarea>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="teamNotify">
+                          <label class="form-check-label" for="teamNotify">알림 보내기</label>
+                        </div>
+                        <button class="btn btn-sm btn-primary">등록</button>
+                      </div>
+                    </div>
+                    <!-- 리스트 -->
+                    <ul class="list-group" id="teamList">   
+                      <li class="list-group-item text-muted text-center">아직 코멘트가 없습니다.</li>
+                      <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                          <strong>김팀원</strong>
+                          <small class="text-muted">2025.04.03 09:30</small>
+                        </div>
+                        <div class="mt-1">오늘 자세 정말 좋았어요!<br>내일도 파이팅</div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                          <strong>박팀원</strong>
+                          <small class="text-muted">2025.04.03 10:10</small>
+                        </div>
+                        <div class="mt-1">스트레칭 후 유산소 10분 추천드립니다!</div>
+                      </li>
+                    </ul>
+                    <div class="d-grid mt-2">
+                      <button class="btn btn-outline-secondary btn-sm">더 보기</button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="text-end">

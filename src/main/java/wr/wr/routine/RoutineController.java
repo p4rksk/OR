@@ -28,4 +28,10 @@ public class RoutineController {
         return "routine/team/routine";
     }
 
+    @GetMapping("/routines/team/detail")
+    public String teamRoutineDetail() {
+        return "routine/team/detail";
+    }
+ 
+
 }

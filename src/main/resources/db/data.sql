@@ -1,5 +1,5 @@
 insert into user_tb (user_name, password_hash, nick_name, img_name, img_path, oauth_id, provider, join_date, created_at,  updated_at)
-values  ('강지민', '$2a$10$thisIsFakeHashForTest1234', '강지민', '강지민.png', '/images/user/강지민.png', null, null, '2025-01-01 00:00:00', '2025-01-01 00:00:01', null ),
+values  ('강지훈', '$2a$10$thisIsFakeHashForTest1234', '강지훈', '강지훈.png', '/images/user/강지훈.png', null, null, '2025-01-01 00:00:00', '2025-01-01 00:00:01', null ),
         ('강영태', '$2a$10$thisIsFakeHashForTest1234', '강영태', '강영태.png', '/images/user/강영태.png', null, null, '2025-01-01 00:00:00', '2025-01-01 00:00:01', null ),
         ('김민우', '$2a$10$thisIsFakeHashForTest1234', '김민우', '김민우.jpg', '/images/user/김민우.png', null, null, '2025-01-01 00:00:00', '2025-01-01 00:00:01', null ),
         ('김요한', '$2a$10$thisIsFakeHashForTest1234', '김요한', '김요한.png', '/images/user/김요한.png', null, null, '2025-01-01 00:00:00', '2025-01-01 00:00:01', null ),
@@ -65,7 +65,11 @@ values  (1, 1, 1, '실전 영어 스터디', '2025-10-05 19:00의 혜화역에�
         (2, 5, 5, '매주 3시간씩 독서하기', '합산해서 월 1등을 상품드려요', '2025-10-26', 'TEAM_SHARED', '독서1.jpg', '/images/routine/독서1.jpg', '2025-10-04 23:50:00', null, '2025-10-04 23:50:05', null), -- 김준식이 10월 4일에 이달의 독서왕에 공동 루틴을 등록함 --
         (2, null, 6, '매주 3시간씩 독서하기', '합산해서 월 1등을 상품드려요', '2025-10-26', 'TEAM_SHARED', '독서1.jpg', '/images/routine/독서1.jpg', '2025-10-04 23:50:00', null, '2025-10-04 23:50:05', null), -- 10월 4일 이달의 독서왕에 공동 루틴에 등록됨 --
         (2, null, 7, '매주 3시간씩 독서하기', '합산해서 월 1등을 상품드려요', '2025-10-26', 'TEAM_SHARED', '독서1.jpg', '/images/routine/독서1.jpg', '2025-10-04 23:50:00', null, '2025-10-04 23:50:05', null), -- 10월 4일 이달의 독서왕에 공동 루틴에 등록됨 --
-        (2, null, 8, '매주 3시간씩 독서하기', '합산해서 월 1등을 상품드려요', '2025-10-26', 'TEAM_SHARED', '독서1.jpg', '/images/routine/독서1.jpg', '2025-10-04 23:50:00', null, '2025-10-04 23:50:05', null); -- 10월 4일 이달의 독서왕에 공동 루틴에 등록됨 --
+        (2, null, 8, '매주 3시간씩 독서하기', '합산해서 월 1등을 상품드려요', '2025-10-26', 'TEAM_SHARED', '독서1.jpg', '/images/routine/독서1.jpg', '2025-10-04 23:50:00', null, '2025-10-04 23:50:05', null), -- 10월 4일 이달의 독서왕에 공동 루틴에 등록됨 --
+        (null, null, 1, '매주 3시간씩 독서하기', '한달의 1권 채우기', '2025-10-20', 'INDIVIDUAL', '독서1.jpg', '/images/routine/독서1.jpg', '2025-10-20 23:50:00', null, '2025-10-20 23:50:05', null), -- 10월 4일 이달의 독서왕에 공동 루틴에 등록됨 --
+        (null, null, 1, '매주 3시간씩 독서하기', '한달의 1권 채우기', '2025-10-21', 'INDIVIDUAL', '독서1.jpg', '/images/routine/독서1.jpg', '2025-10-04 23:50:00', null, '2025-10-04 23:50:05', null), -- 10월 4일 이달의 독서왕에 공동 루틴에 등록됨 --
+        (null, null, 1, '매주 3시간씩 독서하기', '합산해서 월 1등을 상품드려요', '2025-10-26', 'INDIVIDUAL', '독서1.jpg', '/images/routine/독서1.jpg', '2025-10-04 23:50:00', null, '2025-10-04 23:50:05', null); -- 10월 4일 이달의 독서왕에 공동 루틴에 등록됨 --
+          
       
 insert into category (category_name)
 values  ('운동'),
