@@ -37,9 +37,6 @@ public class RoutineCompletion {
     @JoinColumn(name = "user_id", nullable=true)
     private User user; // 루틴을 완료한 사용자
 
-    @Column(nullable=false)
-    private Boolean is_done;
-
 
     @Column(nullable=false)
     private LocalDateTime completedAt;
@@ -56,12 +53,11 @@ public class RoutineCompletion {
     private LocalDateTime updatedAt;
 
     @Builder
-    public RoutineCompletion(Long id, Routine routine, User user,  Boolean is_done,
+    public RoutineCompletion(Long id, Routine routine, User user,
             LocalDateTime completedAt, LocalDateTime editedAt, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;
         this.routine = routine;
         this.user = user;
-        this.is_done = is_done;
         this.completedAt = completedAt;
         this.editedAt = editedAt;
         this.createdAt = createdAt;
